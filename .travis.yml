@@ -1,4 +1,4 @@
-language: pyhton
+language: python
 python:
   - "3.8"
 
@@ -9,4 +9,3 @@ before_script: pip3 install docker-compose
 
 script:
   - docker-compose run app sh -c "python manage.py test && flake8"
-  
